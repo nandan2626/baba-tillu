@@ -173,3 +173,24 @@ poly = &tri;
 cout << "Triangle area: " << poly->area() << endl;
 return 0;
 }
+
+7. Program to Copy Contents from One File to Another
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main() {
+ifstream infile("source.txt");
+ofstream outfile("destination.txt");
+if (!infile || !outfile) {
+cout << "Error opening files!" << endl;
+return 1;
+}
+char ch;
+while (infile.get(ch)) {
+outfile.put(ch);
+}
+cout << "File copied successfully!" << endl;
+infile.close();
+outfile.close();
+return 0;
+}
