@@ -1,4 +1,11 @@
 1. Program to Evaluate the Expression X = (-b ± √(b² - 4ac)) / 2a
+
+
+
+
+
+
+
 #include <iostream>
 #include <cmath>
 using namespace std;
